@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layerType="hardware"
+        android:textSize="18sp"
+        android:textColor="#53E253"/>
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="5dp"
+        android:layerType="hardware"
+        android:textSize="13sp"/>
+
+    <View
+        android:id="@+id/center_horizontal_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_below="@id/center_horizontal_line"
+        android:layerType="hardware"
+        android:textSize="15sp"
+        android:textColor="@android:color/darker_gray"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/hint"
+        android:background="@android:color/darker_gray"/>
+
+    <andy.zhu.aliinterview.widget.FlyInTextView
+        android:id="@+id/fly_in_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/hint"
+        android:layout_below="@+id/center_horizontal_line"
+        android:layerType="hardware"/>
+
+    <ImageView
+        android:id="@+id/next"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/ic_next"
+        android:background="?android:attr/selectableItemBackgroundBorderless"/>
+</merge>
